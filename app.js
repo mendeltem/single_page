@@ -1,9 +1,23 @@
-var myApp = angular.module('myApp', []);
+var app=angular.module('single-page-app',['ngRoute']);
 
-myApp.controller('mainController', ['$scope', '$location','$log'
-function($scope,$location,$log) {
-	
-	
-	
-	
-}]);
+
+app.config(function($routeProvider){
+
+
+      $routeProvider
+          .when('/',{
+                templateUrl: 'home.html'
+          })
+          .when('/second',{
+                templateUrl: 'second.html'
+          });
+
+
+});
+
+
+app.controller('cfgController',function($scope){
+
+      $scope.name="Hello world";
+
+});

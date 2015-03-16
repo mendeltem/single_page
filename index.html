@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Single page web app using Angularjs</title>
+
+
+<script src="angular.js"></script>
+ <script src="angular-route.js"></script>
+  <script src="jquery.js"></script>
+  <script src="app.js"></script>
+
+
+</head>
+<body ng-app="single-page-app">
+  <div ng-controller="cfgController">
+  <div>
+
+         <ul>
+        <li ><a href="#/">Home<span >(current)</span></a></li>
+        <li><a href="#/second">Second</a></li>
+    </ul>
+
+</div>
+  <br/>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  </div>
+  <div ng-view class="jumbotron"></div>
+  </div>
+</body>
+</html>
